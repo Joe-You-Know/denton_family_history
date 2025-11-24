@@ -1,46 +1,99 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>Directions – Denton Stake Family History</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    <body>
-      <header class="site-header">
-        <div class="site-header-top">
-          <div class="site-logo">
-            <span class="site-logo__title">Denton Stake</span>
-            <span class="site-logo__subtitle">Family History Conference</span>
-          </div>
-          <nav class="main-nav" aria-label="Main navigation">
-            <ul></ul>
-          </nav>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <title>Directions – Denton Stake Family History</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="Directions to the Denton Stake Family History event at 3000 Old North Rd, Denton, Texas." />
+
+  <!-- Favicon (optional) -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+  <!-- Main site CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="page directions-page">
+
+  <div class="wrapper">
+
+    <!-- Header -->
+    <header class="header site-header">
+      <!-- Logo -->
+      <div class="logo site-logo">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="Denton Stake Family History Logo" />
+        </a>
+      </div>
+      <!-- /Logo -->
+
+      <hr />
+
+      <!-- Nav -->
+      <div class="navi">
+        <nav class="main-nav" aria-label="Main navigation">
+          <!-- Populated by assets/js/nav.js -->
+          <ul></ul>
+        </nav>
+      </div>
+      <!-- /Nav -->
+
+      <br class="clear" />
+    </header>
+    <!-- /Header -->
+
+    <!-- Main Content -->
+    <main class="site-main">
+      <section class="page-card directions">
+
+        <h1>Directions</h1>
+
+        <h2 class="text-center">
+          Our Address is <strong>3000 Old North Rd, Denton, Texas</strong>
+        </h2>
+
+        <ul class="directions-notes">
+          <li>
+            <h3>There is plenty of parking with many upfront handicapped slots.</h3>
+          </li>
+          <li>
+            <h3>There are ramps to the main doors.</h3>
+          </li>
+        </ul>
+
+        <div class="directions-map">
+          <!-- You can tweak width/height or switch to a responsive container in your CSS -->
+          <iframe
+            title="Map to Denton Stake Building"
+            loading="lazy"
+            style="border:0;"
+            width="400"
+            height="500"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=3000+Old+North+Rd,Denton,TX">
+          </iframe>
         </div>
-      </header>
 
-      <main class="site-main">
-<header class="page-header">
-  <h1>Directions</h1>
-  <p>How to get to the Denton Stake Center.</p>
-</header>
-<section class="page-card">
-  <p>Replace this text with your actual address and directions.</p>
-  <p>You can also embed a Google Map iframe here.</p>
-</section>
+      </section>
+    </main>
+    <!-- /Main Content -->
 
-      </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>&copy; <span id="year"></span> Family History Genealogy. All Rights Reserved.</span>
+        <span>Stake Family History Committee</span>
+      </div>
+    </footer>
+    <!-- /Footer -->
 
-      <footer class="site-footer">
-        <div class="site-footer__inner">
-          <span>&copy; <span id="year"></span> Denton Stake Family History</span>
-          <span>Stake Family History Committee</span>
-        </div>
-      </footer>
+  </div><!-- /wrapper -->
 
-      <script src="assets/js/nav.js"></script>
-      <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-      </script>
-    </body>
-    </html>
+  <!-- Nav builder -->
+  <script src="assets/js/nav.js"></script>
+  <script>
+    // Dynamic year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
