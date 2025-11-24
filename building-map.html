@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Building Map – Denton Stake Family History</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+      <header class="site-header">
+        <div class="site-header-top">
+          <div class="site-logo">
+            <span class="site-logo__title">Denton Stake</span>
+            <span class="site-logo__subtitle">Family History Conference</span>
+          </div>
+          <nav class="main-nav" aria-label="Main navigation">
+            <ul></ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="site-main">
+<header class="page-header">
+  <h1>Building Map</h1>
+  <p>Map of the building layout for classes and booths.</p>
+</header>
+<section class="page-card">
+  <p>Add an image of your building map here:</p>
+  <p><em>&lt;img src="assets/img/building-map.png" alt="Building map"&gt;</em></p>
+</section>
+
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <span>&copy; <span id="year"></span> Denton Stake Family History</span>
+          <span>Stake Family History Committee</span>
+        </div>
+      </footer>
+
+      <script src="assets/js/nav.js"></script>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+    </body>
+    </html>
