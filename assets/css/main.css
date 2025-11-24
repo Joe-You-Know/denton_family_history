@@ -50,6 +50,10 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.03em;
   padding-bottom: 0.1rem;
   border-bottom: 2px solid transparent;
+  color:white;
+}
+.main-nav a:hover {
+  opacity:0.9;
 }
 .main-nav a.is-active {
   border-color: #c7933a;
