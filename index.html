@@ -1,60 +1,158 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <title>Home – Denton Stake Family History</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Denton Stake Family History Conference"/>
-      <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    <body>
-      <header class="site-header">
-        <div class="site-header-top">
-          <div class="site-logo">
-            <span class="site-logo__title">Denton Stake</span>
-            <span class="site-logo__subtitle">Family History Conference</span>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <title>Denton Stake Family History</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="Find your ancestors" />
+
+  <!-- Favicon (optional: update the path if you add one) -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+  <!-- Main CSS for the static site -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- Wrapper -->
+  <div class="wrapper">
+
+    <!-- Header -->
+    <header class="header site-header">
+      <!-- Logo -->
+      <div class="logo site-logo">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="Denton Stake Family History Logo" />
+        </a>
+      </div>
+      <!-- /Logo -->
+
+      <hr />
+
+      <!-- Nav -->
+      <div class="navi">
+        <nav class="main-nav" aria-label="Main navigation">
+          <!-- The <ul> will be populated by assets/js/nav.js -->
+          <ul></ul>
+        </nav>
+      </div>
+
+      <br class="clear" />
+    </header>
+    <!-- /Header -->
+
+    <!-- Main Content -->
+    <main class="site-main">
+
+      <!-- Hero / Slider area (you can adjust classes or images as desired) -->
+      <section class="home-hero">
+        <div class="home-hero__content">
+          <p class="home-hero__eyebrow">Family History Classes</p>
+          <h1 class="home-hero__title">
+            Denton Stake Family Discovery Day
+          </h1>
+          <div class="home-hero__meta">
+            <span>April 30, 2022 – 8:45 a.m. to 12:00 p.m.</span>
+            <span>The Church of Jesus Christ of Latter Day Saints</span>
           </div>
-          <nav class="main-nav" aria-label="Main navigation">
-            <ul></ul>
-          </nav>
+          <p>
+            <strong>3000 Old North Road, Denton, TX 76209</strong><br />
+            Please
+            <span style="color: #0000ff;">
+              <strong>
+                <a style="color: #0000ff;" href="registration.html">register</a>
+              </strong>
+            </span>,
+            however, walk-ins are welcome.
+          </p>
+          <div class="home-hero__cta-row">
+            <a class="button button--primary" href="registration.html">Register now</a>
+            <a class="button button--ghost" href="classes.html">View classes</a>
+          </div>
         </div>
-      </header>
 
-      <main class="site-main">
-<section class="home-hero">
-  <div class="home-hero__content">
-    <p class="home-hero__eyebrow">Family History Conference</p>
-    <h1 class="home-hero__title">Find your ancestors. Strengthen your family.</h1>
-    <div class="home-hero__meta">
-      <span>Saturday, March 14, 2026</span>
-      <span>Denton Stake Center</span>
-    </div>
-    <p>
-      Join us for a day of classes, booths, and activities focused on helping you discover,
-      preserve, and share your family stories.
-    </p>
-    <div class="home-hero__cta-row">
-      <a class="button button--primary" href="registration.html">Register now</a>
-      <a class="button button--ghost" href="classes.html">Browse classes</a>
-    </div>
+        <!-- If you want a rotating slider, you can wire one up here.
+             For now we'll just show the first banner image. -->
+        <figure class="home-hero__image" aria-label="Family history conference banner">
+          <img
+            src="assets/img/bridge5-700x300.png"
+            alt="Bridge between generations"
+          />
+        </figure>
+      </section>
+
+      <!-- Sponsors -->
+      <section class="sponsorsContainer page-card" style="margin-top: 2rem;">
+        <div class="homeContainer">
+          <h2>Sponsors</h2>
+          <p>
+            <!-- Update src paths to match where you place these images -->
+            <img
+              loading="lazy"
+              width="135"
+              height="62"
+              class="aligncenter size-full"
+              src="assets/img/sponsor1.png"
+              alt="Sponsor 1"
+            />
+            <img
+              loading="lazy"
+              width="117"
+              height="63"
+              class="alignleft size-full"
+              src="assets/img/sponsor2.png"
+              alt="Sponsor 2"
+            />
+            <img
+              loading="lazy"
+              width="270"
+              height="63"
+              class="alignleft size-full"
+              src="assets/img/sponsor3.png"
+              alt="Sponsor 3"
+            />
+            <img
+              loading="lazy"
+              width="108"
+              height="80"
+              class="alignleft size-full"
+              src="assets/img/courthouse.jpg"
+              alt="Denton courthouse"
+            />
+          </p>
+
+          <h2>
+            <a
+              href="https://www.genealogydentontexas.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Denton County Genealogical Society
+            </a>
+          </h2>
+        </div>
+      </section>
+
+    </main>
+    <!-- /Main Content -->
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>&copy; <span id="year"></span> Family History Genealogy. All Rights Reserved.</span>
+        <span>Stake Family History Committee</span>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
   </div>
-  <figure class="home-hero__image" aria-hidden="true">
-    <!-- Replace this placeholder with a real image if desired -->
-  </figure>
-</section>
+  <!-- /Wrapper -->
 
-      </main>
-
-      <footer class="site-footer">
-        <div class="site-footer__inner">
-          <span>&copy; <span id="year"></span> Denton Stake Family History</span>
-          <span>Stake Family History Committee</span>
-        </div>
-      </footer>
-
-      <script src="assets/js/nav.js"></script>
-      <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-      </script>
-    </body>
-    </html>
+  <!-- Dynamic nav builder -->
+  <script src="assets/js/nav.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
